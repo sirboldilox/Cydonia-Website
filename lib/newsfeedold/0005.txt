@@ -1,0 +1,5 @@
+Worldmap Update#h#     10/03/2013  #d#
+Now using some new mapping software to generate the world map
+<br> It has a few issues with the mods but i'll look into this
+<br> for now redwood trees are sticky pistons, enjoy =]
+<br> #SirBoldilox

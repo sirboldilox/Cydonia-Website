@@ -1,0 +1,25 @@
+#container
+{
+	width:100%;
+}
+
+#banner
+{
+	height: 80px;
+	border-bottom-style: solid;
+	border-bottom-width:5px;
+}
+
+
+#bannerimage
+{
+	float:left;
+}
+
+
+#titlebanner
+{
+	
+	float:right;
+	padding-right:10px;
+}
