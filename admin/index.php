@@ -1,6 +1,6 @@
 <?php // <CHANGE THIS TO NEW PAGE DISCRIPTION>
 
-require_once "../settings/auth.php";
+require_once "../lib/auth.php";
 
 // Redirect none logged in users, or none admins.
 if(isset($_SESSION["username"]))
@@ -42,7 +42,7 @@ elseif(isset($_POST["headder"]) && isset($_POST["content"]))
 }
 
 // Headder template and functions
-require_once "../settings/headder.php";
+require_once "../lib/headder.php";
 
 // CONTENT
 echo("<div id='content'>");
