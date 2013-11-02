@@ -43,7 +43,7 @@ echo <<<_END
 
 <head>
  <link rel="stylesheet" type="text/css" href="/css/reset.css">
- <link rel="stylesheet" type="text/css" href="/css/style.css">
+ <link rel="stylesheet" type="text/css" href="/css/main.css">
  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
  <title>Cydonia MC</title>
 </head>
