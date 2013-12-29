@@ -1,6 +1,6 @@
-<?php // <CHANGE THIS TO NEW PAGE DISCRIPTION>
+<?php // Login page
 
-// Authentication functions.
+// Requirements
 require_once "./lib/auth.php";
 
 $bad_login = 0;
@@ -23,7 +23,13 @@ if (isset($_POST['username']) && isset($_POST['password']))
 		$_SESSION["displayname"] = getDisplayname($_POST["username"]);
 		$_SESSION["admin"] = isAdmin($_POST["username"]);
 
-		$bad_login = 0;
+		$username = $_SESSION["username"];
+		$displayname = $_SESSION["displayname"];
+		$admin = $_SESSION["admin"];
+		
+		$_SESSION["User"] = new User($username,$displayname,$admin);
+		
+		// Redirect away from login page
 		redirect();
 		exit();
 	}
@@ -36,7 +42,7 @@ if (isset($_POST['username']) && isset($_POST['password']))
 
 $nerf_stat_counter = 1;
 
-// Headder template and functions
+// Requirements
 require_once "./lib/headder.php";
 
 // CONTENT

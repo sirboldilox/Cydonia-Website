@@ -83,7 +83,7 @@ echo <<<_END
 
 _END;
 	/* Display Login Button or Username */
-	if(isset($_SESSION["username"]))
+	if(isset($_SESSION["User"]))
 	{
 
 		echo("<li id='userbutton' class='right'><a href='#'>" .$_SESSION["displayname"]. "</a>");

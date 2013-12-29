@@ -1,65 +1,6 @@
 <?php
 
-/* OLD NEWS FEED FUNCTION
-function getnewsfeed($feedlen,$dir)
-{
-	// Check config exists 
-	if(!file_exists($dir)) return 0;
-	if(!file_exists("{$dir}config.txt")) return 0;
-
-	// read config for feed count
-	$file=fopen("{$dir}config.txt","r");
-	$count=trim(fgets($file));
-	fclose($file);
-
-	$newsfeed=array();
-
-	// retrive feed data 
-	for($i=0;$i<$feedlen;$i++)
-	{
-		if(!file_exists($dir.$count.".txt"))
-		{
-			$newsfeed[$i]["header"]="Unavalible";
-			$newsfeed[$i]["content"]="No content avalible";
-		}
-		else
-		{
-			$file=fopen($dir.$count.".txt","r");
-			$text=fread($file,8196);
-			$split1=array();
-			$split2=array();
-
-			$split1=explode("#h#",$text);
-			$split2=explode("#d#",$split1[1]);
-
-			$newsfeed[$i]["header"]=$split1[0];
-			$newsfeed[$i]["date"]=$split2[0];
-			$newsfeed[$i]["content"]=$split2[1];
-			fclose($file);
-		}
-
-		if($count[3]=='0')
-		{
-			$count[3]='9';
-			if($count[2]=='0')
-			{
-				$count[2]='9';
-				if($count[1]=='0') $count[1]=9;
-				else $count[1]=$count[1]-1;
-
-			}
-			else $count[2]=$count[2]-1;
-		}
-		else $count[3]=$count[3]-1;
-
-	}
-	//var_dump($newsfeed);
-	return $newsfeed;
-
-}
-*/
-
-// SQL NEWS FEED FUNCTION
+// SQL NEWSFEED FUNCTION
 function getnewsfeed($feedlen,$dir)
 {
 	// Get data from mysql

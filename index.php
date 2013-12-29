@@ -4,7 +4,6 @@
 require_once "./lib/headder.php";
 
 //  Get News Feed
-
 $newsfeedlen=4;
 $dir="/usr/share/nginx/www/lib/newsfeed/";
 

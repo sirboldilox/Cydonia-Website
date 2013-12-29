@@ -1,22 +1,13 @@
-<?php //Authenitcation function
+<?php //Authenitcation functions
 
 // Start Session for login and dynamic services
 
 session_start();
 
-// MySQL
-
-$dbhost = "localhost";
-$dbport = 0;
-$dbuser = "webphp";
-$dbpass = "logmeinplease";
-$dbname = "cydoniaWebsite";
-
-$mysqlcon = mysql_connect($dbhost,$dbuser,$dbpass) or die(mysql_error());
-mysql_select_db($dbname) or die(mysql_error());
+require_once("mysql.php");			// MySQL settings
+require_once("class/User.php");		// User class
 
 // Functions
-
 function stringsanatize($instring)
 {
         $instring = strip_tags($instring);
@@ -87,17 +78,17 @@ function authenticate($username,$password)
 
 function updatePass($username,$newpassword,$debug=0)
 {
-	// Encrypt Password
+		// Encrypt Password
         $password = sha1(md5($newpassword));
 
         // Get data from mysql
         $QUERY = "UPDATE users SET password='$password' WHERE username='$username';";
 
-	//echo($QUERY);
+		//echo($QUERY);
         $QueryReturn = mysql_query($QUERY);
         if($debug) var_dump($QueryReturn);
 
-	//$rows = mysql_fetch_row($QueryReturn);
+		//$rows = mysql_fetch_row($QueryReturn);
 
 	return 1;
 }
