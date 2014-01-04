@@ -1,8 +1,0 @@
-Server Modpack Update! Ultimate is Here!#h# 	15/03/2013#d#
-From now on the Server will official be running the FTB Ultimate Pack
-<br>Gregtech for those of you wondering has been configered to only add cool
-<br>new block and not interfere too much, have fun, even more mods to mess with now =]
-
-<br> So your NEI doesnt fool you here is the <a href="/GregConfig.zip"> GregTech Config Files</a>
-<br>
-<br># SirBoldilox 

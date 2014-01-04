@@ -23,12 +23,6 @@ if (isset($_POST['username']) && isset($_POST['password']))
 		$_SESSION["displayname"] = getDisplayname($_POST["username"]);
 		$_SESSION["admin"] = isAdmin($_POST["username"]);
 
-		$username = $_SESSION["username"];
-		$displayname = $_SESSION["displayname"];
-		$admin = $_SESSION["admin"];
-		
-		$_SESSION["User"] = new User($username,$displayname,$admin);
-		
 		// Redirect away from login page
 		redirect();
 		exit();

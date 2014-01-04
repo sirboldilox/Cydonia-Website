@@ -1,3 +1,0 @@
-Cydonia News!#h# #d#
-Cydonia Newsfeed is slowly getting close to 
-fully working! <br> Damn php.

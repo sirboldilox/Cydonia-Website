@@ -41,7 +41,7 @@ if (isset($_POST['oldpassword']) && isset($_POST['newpassword']) )
 $nerf_stat_counter = 1;
 
 // Headder template and functions
-require_once "./settings/headder.php";
+require_once "./lib/headder.php";
 
 // CONTENT
 

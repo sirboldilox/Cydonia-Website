@@ -6,6 +6,7 @@
  */
 
 require_once("auth.php");
+require_once("config.php");
 require_once("phpfunc.php");
 
 $nerf_stat_counter = 0;
@@ -19,12 +20,14 @@ $nerf_stat_counter = 0;
 ///////////////////////////
 
 /* Read Minecraft server status from "status.txt" and set image accordingly */
-$fh = fopen("/opt/minecraft/FTB/UltimateServer/status.txt","r");
+$fh = fopen($MC_Server_Root . "status.txt","r");
 $MCstatus = fgets($fh);
 fclose($fh);
 
-if (strcmp($MCstatus,"TRUE\n")==0) { $MCicon = "/images/mcicon.png"; }
-else { $MCicon = "/images/mcicongrey.png"; }
+if (strcmp($MCstatus,"TRUE\n")==0) 
+	$MCicon = "/images/mcicon.png";
+else 
+	$MCicon = "/images/mcicongrey.png";
 
 $stats = full_stat(localhost);
 
