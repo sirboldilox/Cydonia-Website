@@ -7,6 +7,7 @@
 
 require_once "Auth/core.php";
 require_once "Core/core.php";
+require_once "Minecraft/core.php";
 require_once "phpfunc.php";
 
 require_once "config.php";

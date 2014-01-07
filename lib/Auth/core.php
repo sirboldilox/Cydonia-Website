@@ -3,7 +3,7 @@
 // Start Session for login and dynamic services
 session_start();
 
-require_once $_SERVER[DOCUMENT_ROOT] . "mysql.php";		// MySQL settings
+require_once $_SERVER[DOCUMENT_ROOT] . "/lib/mysql.php";		// MySQL settings
 
 /*
  *  Redirect to index page.
@@ -12,7 +12,6 @@ function redirect()
 {
         header("location:/index.php");
 }
-
 
 /*
  *  Remove unwanted entities from string
