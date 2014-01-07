@@ -75,7 +75,6 @@ echo <<<_END
 			<ul>
 				<li><a href="/index.php" > Home </a></li>
 				<li><a href="/worldmap" > World Map </a></li>
-				<li><a href="/UnleashedMap" > New Map </a></li>
 				<li><a href="/gallery.php" > Gallery </a></li>
 				<li><a href="/players.php" > Players </a></li>
 				<li><a href="/help.php" > Help </a></li>
