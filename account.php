@@ -1,7 +1,7 @@
 <?php // <CHANGE THIS TO NEW PAGE DISCRIPTION>
 
 // Authentication functions.
-require_once "./lib/auth.php";
+require_once "lib/auth.php";
 
 $bad_login = 0;
 
@@ -93,6 +93,6 @@ echo("</div>");
 // END OF CONTENT
 
 // Footer contents and closing.
-require_once "./settings/footer.php";
+require_once "lib/footer.php";
 
 ?>

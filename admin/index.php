@@ -1,6 +1,6 @@
 <?php // <CHANGE THIS TO NEW PAGE DISCRIPTION>
 
-require_once "../lib/auth.php";
+require_once $_SERVER[DOCUMENT_ROOT] ."/lib/Auth/core.php";
 
 // Redirect none logged in users, or none admins.
 if(isset($_SESSION["username"]))
@@ -42,7 +42,7 @@ elseif(isset($_POST["headder"]) && isset($_POST["content"]))
 }
 
 // Headder template and functions
-require_once "../lib/headder.php";
+require_once $_SERVER[DOCUMENT_ROOT] . "lib/headder.php";
 
 // CONTENT
 echo("<div id='content'>");
@@ -84,6 +84,6 @@ echo("</div>");
 // END OF CONTENT
 
 // Footer contents and closing.
-require_once "../settings/footer.php";
+require_once "lib/footer.php";
 
 ?>

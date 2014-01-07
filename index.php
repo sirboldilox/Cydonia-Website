@@ -1,7 +1,7 @@
 <?php // <CHANGE THIS TO NEW PAGE DISCRIPTION>
 
 // Headder template and functions
-require_once "./lib/headder.php";
+require_once "lib/headder.php";
 
 //  Get News Feed
 $newsfeedlen=4;
@@ -11,7 +11,6 @@ $newsfeed = getnewsfeed($newsfeedlen);
 
 // CONTENT
 echo("<div id='content'>");
-
 
 	// Newsfeed
 	echo("<div id=\"newsfeed\">");
@@ -105,6 +104,6 @@ echo("</div>");
 // END OF CONTENT
 
 // Footer contents and closing.
-require_once "./settings/footer.php";
+require_once "lib/footer.php";
 
 ?>

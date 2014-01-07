@@ -1,8 +1,7 @@
 <?php // Login page
 
-// Requirements
-require_once "./lib/auth.php";
-
+// Session start
+require_once "lib/Auth/core.php";
 $bad_login = 0;
 
 // Prevent logged in users from acessing the page.
@@ -34,13 +33,10 @@ if (isset($_POST['username']) && isset($_POST['password']))
 
 }
 
-$nerf_stat_counter = 1;
-
 // Requirements
 require_once "./lib/headder.php";
 
 // CONTENT
-
 echo("<div id='content'>");
 ?>
 
@@ -66,6 +62,6 @@ echo("</div>");
 // END OF CONTENT
 
 // Footer contents and closing.
-require_once "./settings/footer.php";
+require_once "lib/footer.php";
 
 ?>

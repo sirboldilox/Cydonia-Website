@@ -18,6 +18,6 @@ echo("</div>");
 // END OF CONTENT
 
 // Footer contents and closing.
-require_once "./settings/footer.php";
+require_once "lib/footer.php";
 
 ?>

@@ -1,10 +1,10 @@
 <?php // <CHANGE THIS TO NEW PAGE DISCRIPTION>
 
 // Headder template and functions
-require_once "./lib/headder.php";
+require_once "lib/headder.php";
 
 // Get Player List
-$players = getplayerlist("/opt/minecraft/FTB/UltimateServer/player-list.txt");
+$players = getplayerlist($MC_Server_Root . "player-list.txt");
 
 // CONTENT
 echo("<div id='content'>");
@@ -70,6 +70,6 @@ echo("</table></div></div>");
 // END OF CONTENT
 
 // Footer contents and closing.
-require_once "./settings/footer.php";
+require_once "lib/footer.php";
 
 ?>
