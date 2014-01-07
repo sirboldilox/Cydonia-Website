@@ -1,9 +1,10 @@
 <?php // Footer content and html closing tags.
 
+/*  To be included by every webpage using dynamic contents.
+ *  Cleans up and closes HTML template.
+ */
 
 // Stat Counter
-
-
 echo <<<_END
 
 <!-- Start of StatCounter Code for Default Guide -->

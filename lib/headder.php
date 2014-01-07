@@ -1,13 +1,15 @@
 <?php // PHP Main Headder File
 
 /*  To be included by every webpage using dynamic contents.
- *  Links other function files.
- *  Includes MySQL login details.
+ *  Links other library files.
+ *  Includes HTML template for all pages.
  */
 
-require_once("auth.php");
-require_once("config.php");
-require_once("phpfunc.php");
+require_once "Auth/core.php";
+require_once "Core/core.php";
+require_once "phpfunc.php";
+
+require_once "config.php";
 
 $nerf_stat_counter = 0;
 
@@ -26,11 +28,7 @@ else
 	$MCicon = "/images/mcicongrey.png";
 
 $stats = full_stat(localhost);
-
-/* Get Random Background image */
-
 $backimage = getBackground(9,"/images/backgrounds/");
-
 
 echo <<<_END
 
@@ -101,6 +99,5 @@ _END;
 	}
 
 	echo "</div></div>";
-
 
 ?>
